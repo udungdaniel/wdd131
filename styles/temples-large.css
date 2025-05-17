@@ -1,7 +1,7 @@
 
 .header-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
@@ -19,7 +19,7 @@ nav {
     display: flex !important;
     flex-direction: row;
     gap: 4rem;
-    justify-content: center;
+    justify-content: right;
 }
 
 
