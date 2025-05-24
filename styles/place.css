@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #007b5e;
+  --secondary-color: #f4f4f4;
+  --text-color: #222;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header,
+footer {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Shared Card Style for Data and Weather */
+.info-card {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Top Data Card */
+.top-weather {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  z-index: 10;
+}
+
+/* Weather Box on Bottom Right */
+.bottom-content {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+/* Add shared styles */
+.weather,
+.top-weather {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.weather-title {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  margin: 0 0 1rem -2rem;
+  border-radius: 4px 4px 0 0;
+}
+
+.weather-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Hide icon and emoticon in Data section */
+.no-icon .weather-icon {
+  display: none !important;
+}
+
+.no-icon h2::after {
+  content: none !important;
+}
+
+/* Mobile view: show SVG */
+@media (max-width: 767px) {
+  .weather-icon {
+    background-image: url("../images/weather_icon.svg");
+  }
+}
+
+/* Desktop view: show emoticon and hide SVG */
+@media (min-width: 768px) {
+  .weather h2::after {
+    content: " ⛅";
+    color: green;
+    margin-left: 0.5rem;
+  }
+
+  .weather-icon {
+    background-image: none;
+  }
+}
