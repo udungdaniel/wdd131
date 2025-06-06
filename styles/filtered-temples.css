@@ -1,0 +1,77 @@
+:root {
+  --primary-bg: #f9f9f9;
+  --primary-color: #003366;
+  --accent-color: #0055aa;
+  --text-dark: #222;
+  --text-light: #fff;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-dark);
+  background-color: var(--primary-bg);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:focus, nav button:hover {
+  background-color: #0077cc;
+  outline: 2px solid #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.cards section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+}

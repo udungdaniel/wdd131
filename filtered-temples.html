@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Explore beautiful temples from around the world in this mobile-first photo gallery.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Udung">
+    <title>Temple Album</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
+
+    <!-- CSS: Mobile First -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav aria-label="Main Navigation">
+            <button id="home">Home</button>
+            <button id="old">Old</button>
+            <button id="new">New</button>
+            <button id="large">Large</button>
+            <button id="small">Small</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temple-cards" class="cards" aria-live="polite"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> &#10070; Daniel Udung, &#10070; Nigeria </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
