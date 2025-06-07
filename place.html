@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My Country Home page">
-  <meta name="author" content="Daniel Udung">
-  <title>Nigeria</title>
-  <link rel="stylesheet" href="styles/place.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover key facts and current weather in Nigeria, including capital, population, and local time." />
+  <meta name="author" content="Daniel Udung" />
+  <title>Nigeria – Facts, Weather, and Capital Info</title>
+  <link rel="stylesheet" href="styles/place.css" />
   <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
-  <header>
+  <header role="banner">
     <h1>Nigeria</h1>
   </header>
 
-  <main>
+  <main role="main">
     <section class="hero">
       <section class="weather top-weather no-icon">
-        <h2 class="weather-title"> Data <span class="weather-icon"></span></h2>
-        <p><b>Area: </b> <span> 923,768 km²</span></p>
-        <p><b>Population: </b> <span> 237.5 million</span></p>
-        <p><b>Capital: </b> <span> Abuja</span></p>
-        <p><b>Language: </b> <span> English</span></p>
-        <p><b>Currency: </b> <span> Naira (NGN)</span></p>
-        <p><b>Time Zone: </b><span> UTC+1 (West Africa Time)</span></p>
-        <p><b>Calling Code: </b> <span> +234</span></p>
-        <p><b>Internet TLD: </b> <span> .ng</span></p>
+        <h2 class="weather-title">Data <span class="weather-icon"></span></h2>
+        <p><b>Area:</b> <span>923,768 km²</span></p>
+        <p><b>Population:</b> <span>237.5 million</span></p>
+        <p><b>Capital:</b> <span>Abuja</span></p>
+        <p><b>Language:</b> <span>English</span></p>
+        <p><b>Currency:</b> <span>Naira (NGN)</span></p>
+        <p><b>Time Zone:</b> <span>UTC+1 (West Africa Time)</span></p>
+        <p><b>Calling Code:</b> <span>+234</span></p>
+        <p><b>Internet TLD:</b> <span>.ng</span></p>
       </section>
 
-
       <picture>
-        <source srcset="images/hero-large.webp" media="(min-width: 768px)">
-        <img src="images/hero-small.webp" alt="Scenic view of the place">
+        <source srcset="images/hero-large.webp" media="(min-width: 768px)" />
+        <img src="images/hero-small.webp" alt="Scenic view of Nigeria" loading="lazy" />
       </picture>
 
       <div class="bottom-content">
@@ -44,16 +42,13 @@
           <p><b>Wind Speed:</b> <span id="wind">5</span> mph</p>
           <p><b>Wind Chill:</b> <span id="chill">Calculating...</span></p>
         </section>
-
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> &#10070; Daniel Udung, &#10070; Nigeria </p>
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> &#10070; Daniel Udung, &#10070; Nigeria</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
-
-
 </html>

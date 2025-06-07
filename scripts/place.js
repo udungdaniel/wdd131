@@ -8,18 +8,16 @@ function calculateWindChill(tempF, speedMph) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const apiKey = 'ab941a565a8b46c9303661c43ee5708b'; // OpenWeatherMap API key
+  const apiKey = 'ab941a565a8b46c9303661c43ee5708b';
   const city = 'Abuja';
   const countryCode = 'NG';
-  const units = 'imperial'; // Use 'metric' for Celsius
+  const units = 'imperial';
 
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&units=${units}&appid=${apiKey}`;
 
   fetch(apiUrl)
     .then(response => {
-      if (!response.ok) {
-        throw new Error('Weather data fetch failed.');
-      }
+      if (!response.ok) throw new Error('Weather data fetch failed.');
       return response.json();
     })
     .then(data => {
