@@ -72,9 +72,11 @@ footer {
     color: #777;
 }
 
-
-label:before {
-    content: attr(for)=="productName" or attr(for)=="rating" or attr(for)=="installDate" ? "* ": "";
+/* Show red asterisk for specific required fields */
+label[for="productName"]::before,
+label[for="rating"]::before,
+label[for="installDate"]::before {
+    content: "* ";
     color: red;
 }
 
